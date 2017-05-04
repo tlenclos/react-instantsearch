@@ -103,7 +103,7 @@ git push origin --tags
 printf "\n\nRelease: pushed to github, publish on npm"
 
 npmFlags=''
-if [[ $beta ]]; then
+if $beta; then
   npmFlags="--tag beta"
 fi
 
